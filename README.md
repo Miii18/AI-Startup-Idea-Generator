@@ -1,4 +1,4 @@
-# 🚀 AI Startup Idea Generator
+# AI Startup Idea Generator
 
 ## Project Overview
 
@@ -134,7 +134,6 @@ startup_idea_generator/
 
 │ └── pitch_agent.py
 
-│
 
 ├── streamlit_app.py
 
@@ -172,7 +171,6 @@ GOOGLE_API_KEY=YOUR_API_KEY
 streamlit run streamlit_app.py
 ```
 
-
 ## Learning Outcomes
 
 Through this project I learned:
@@ -184,9 +182,7 @@ Through this project I learned:
 - Streamlit Frontend Development
 - PDF Report Generation
 - Agent Orchestration
-
 ---
-
 ## Future Improvements
 
 - User Authentication
