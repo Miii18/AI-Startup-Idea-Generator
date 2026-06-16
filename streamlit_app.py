@@ -45,11 +45,9 @@ def create_pdf_report(selected_idea, market_report, competitor_report, business_
     custom_subtitle_style = ParagraphStyle(
         name='CustomSubtitle',
         parent=styles['Normal'],
-        
         fontName='Times-Roman',
 
         fontSize=10,
-
         leading=14,
 
         textColor=colors.HexColor('#64748b'), # slate-500
@@ -59,13 +57,16 @@ def create_pdf_report(selected_idea, market_report, competitor_report, business_
     section_heading_style = ParagraphStyle(
         name='SectionHeading',
         parent=styles['Normal'],
-        fontName='Times-Bold',
+        fontName='Times-Bold', 
+
         fontSize=13,
         leading=17,
+
         textColor=colors.HexColor('#4f46e5'), # indigo-600
         spaceBefore=16,
         spaceAfter=8,
         keepWithNext=True
+
     )
     
     custom_body_style = ParagraphStyle(
@@ -103,8 +104,10 @@ def create_pdf_report(selected_idea, market_report, competitor_report, business_
         spaceAfter=4
     )
     
+
     story = []
     
+
     # 3. Add Document Header Cover block
     story.append(Paragraph("AI STARTUP BRIEF", ParagraphStyle(
         name='CategoryTag',
@@ -134,7 +137,6 @@ def create_pdf_report(selected_idea, market_report, competitor_report, business_
         if not text:
             story.append(Paragraph("No data available.", custom_body_style))
             return
-            
         lines = text.split("\n")
         for line in lines:
             line_stripped = line.strip()
