@@ -18,10 +18,15 @@ def create_pdf_report(selected_idea, market_report, competitor_report, business_
     doc = SimpleDocTemplate(
         buffer,
         pagesize=letter,
+
         leftMargin=54,
+
         rightMargin=54,
+
         topMargin=54,
+
         bottomMargin=65
+
     )
     
     # 2. Typography Styles definition
@@ -40,9 +45,13 @@ def create_pdf_report(selected_idea, market_report, competitor_report, business_
     custom_subtitle_style = ParagraphStyle(
         name='CustomSubtitle',
         parent=styles['Normal'],
+        
         fontName='Times-Roman',
+
         fontSize=10,
+
         leading=14,
+
         textColor=colors.HexColor('#64748b'), # slate-500
         spaceAfter=15
     )
